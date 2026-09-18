@@ -2,12 +2,27 @@
 coverage/*
 logs/*
 node_modules/*
+**/node_modules/
 
 helix-importer-ui
 .DS_Store
 *.bak
 .idea
+.acr/
+.agents/
+.claude/
+.codegraph/
+.codex/
+.genia/
+agent/
+genia.yaml
+import-work/
+skills-lock.json
+use-case/
 
 # Ensure these files are tracked
 !CLAUDE.md
 !AGENTS.md
+.genia/backup/
+.genia/tmp/
+.genia/tools/

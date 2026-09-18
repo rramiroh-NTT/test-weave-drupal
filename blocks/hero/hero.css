@@ -5,20 +5,54 @@
 
 .hero {
   position: relative;
-  padding: 40px 24px;
-  min-height: 300px;
+  display: flex;
+  align-items: flex-end;
+  min-height: 360px;
+  overflow: hidden;
+  padding: 80px 24px 48px;
+  color: #fff;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgb(0 0 0 / 72%) 0%, rgb(0 0 0 / 44%) 42%, rgb(0 0 0 / 12%) 100%),
+    linear-gradient(0deg, rgb(0 0 0 / 38%) 0%, rgb(0 0 0 / 0%) 52%);
+}
+
+.hero > div:last-child {
+  width: 100%;
+  max-width: 980px;
+}
+
+.hero > div:last-child > div {
+  max-width: 860px;
+}
+
+.hero p {
+  max-width: 980px;
+  margin: 0 0 18px;
+  color: #fff;
+  font-size: var(--body-font-size-l);
+  line-height: 1.35;
+  text-shadow: 0 1px 3px rgb(0 0 0 / 45%);
 }
 
 .hero h1 {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--background-color);
+  max-width: 920px;
+  margin: 0 0 20px;
+  color: #fff;
+  font-size: clamp(2.75rem, 5vw, 4.75rem);
+  line-height: 1;
+  text-shadow: 0 2px 8px rgb(0 0 0 / 45%);
 }
 
 .hero picture {
   position: absolute;
-  z-index: -1;
+  z-index: -2;
   inset: 0;
   object-fit: cover;
   box-sizing: border-box;
@@ -32,6 +66,7 @@
 
 @media (width >= 900px) {
   .hero {
-    padding: 40px 32px;
+    min-height: 420px;
+    padding: 96px 54px 64px;
   }
 }
