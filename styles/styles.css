@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Copyright 2020 Adobe. All rights reserved.
  * This file is licensed to you under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License. You may obtain a copy
@@ -323,3 +323,366 @@ main .section.highlight {
   margin: 0;
   padding: 40px 0;
 }
+
+/* Comunidad de Madrid home approximation */
+/* stylelint-disable no-descending-specificity */
+body.home {
+  --brand-red: #e30613;
+  --home-muted: #f3f3f3;
+  --home-border: #d8d8d8;
+  --home-black: #151515;
+}
+
+body.home main > .section {
+  margin: 0;
+  padding-block: 32px;
+  border-bottom: 1px solid #eee;
+}
+
+body.home main > .section > div {
+  max-width: 1280px;
+}
+
+body.home main h1 {
+  margin: 0 0 24px;
+  font-size: clamp(2.4rem, 5vw, 5.3rem);
+  font-weight: 300;
+  line-height: 0.95;
+}
+
+body.home main h1 strong {
+  display: block;
+  color: var(--home-black);
+  font-weight: 700;
+}
+
+body.home main h2 {
+  margin: 0 0 22px;
+  font-size: clamp(1.8rem, 3vw, 3rem);
+  font-weight: 700;
+}
+
+body.home main h3 {
+  font-size: var(--heading-font-size-m);
+  line-height: 1.15;
+}
+
+body.home main p {
+  max-width: 72ch;
+}
+
+body.home a:any-link {
+  color: #0645d9;
+  font-weight: 700;
+}
+
+body.home a.button.primary {
+  border-color: var(--brand-red);
+  background-color: var(--brand-red);
+}
+
+body.home a.button.secondary {
+  border-color: var(--home-black);
+  color: var(--home-black);
+}
+
+body.home main > .section:nth-of-type(1) {
+  padding-block: 48px 24px;
+}
+
+body.home main > .section:nth-of-type(1) .columns > div {
+  gap: 48px;
+}
+
+body.home main > .section:nth-of-type(1) .columns > div > div:first-child p:first-child {
+  color: var(--brand-red);
+  font-size: var(--body-font-size-xs);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+body.home main > .section:nth-of-type(1) .columns > div > div:first-child p:not(:first-child) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+body.home main > .section:nth-of-type(1) .columns > div > div:first-child p:not(:first-child) a {
+  border: 1px solid #bdbdbd;
+  padding: 5px 12px;
+  background: #fff;
+  color: #333;
+  font-size: var(--body-font-size-xs);
+  font-weight: 500;
+}
+
+body.home main > .section:nth-of-type(1) .columns > div > div:nth-child(2) {
+  border: 1px solid var(--home-border);
+  border-top: 5px solid var(--brand-red);
+  padding: 24px;
+  background: linear-gradient(90deg, #fff 0 68%, #f7f7f7 68% 100%);
+  box-shadow: 0 8px 24px rgb(0 0 0 / 8%);
+}
+
+body.home main > .section:nth-of-type(1) .columns h2 {
+  font-size: var(--heading-font-size-l);
+}
+
+body.home main > .section:nth-of-type(2) .cards > ul {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 32px;
+}
+
+body.home main > .section:nth-of-type(2) .cards > ul > li,
+body.home main > .section:nth-of-type(6) .cards > ul > li,
+body.home main > .section:nth-of-type(8) .cards > ul > li {
+  border: 0;
+  background: transparent;
+}
+
+body.home main > .section:nth-of-type(2) .cards .cards-card-body,
+body.home main > .section:nth-of-type(6) .cards .cards-card-body,
+body.home main > .section:nth-of-type(8) .cards .cards-card-body {
+  margin-inline: 0;
+}
+
+body.home main > .section:nth-of-type(2) .cards h3,
+body.home main > .section:nth-of-type(6) .cards h3,
+body.home main > .section:nth-of-type(8) .cards h3 {
+  margin-top: 12px;
+}
+
+body.home main > .section:nth-of-type(3) {
+  background-color: #fff;
+}
+
+body.home main > .section:nth-of-type(3) .cards > ul {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0;
+  border-top: 1px solid var(--home-border);
+}
+
+body.home main > .section:nth-of-type(3) .cards > ul > li {
+  position: relative;
+  min-height: 118px;
+  border: 0;
+  border-bottom: 1px solid var(--home-border);
+  padding-left: 34px;
+}
+
+body.home main > .section:nth-of-type(3) .cards > ul > li::before {
+  content: "+";
+  position: absolute;
+  top: 22px;
+  left: 8px;
+  color: var(--brand-red);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+body.home main > .section:nth-of-type(3) .cards > ul > li::after {
+  content: "â†’";
+  position: absolute;
+  top: 24px;
+  right: 12px;
+  color: #222;
+}
+
+body.home main > .section:nth-of-type(3) .cards h3 {
+  margin-top: 0;
+  font-size: var(--heading-font-size-s);
+}
+
+body.home main > .section:nth-of-type(3) .cards p,
+body.home main > .section:nth-of-type(5) .cards p,
+body.home main > .section:nth-of-type(6) .cards p,
+body.home main > .section:nth-of-type(8) .cards p {
+  font-size: var(--body-font-size-xs);
+}
+
+body.home main > .section:nth-of-type(4) {
+  background-color: var(--home-muted);
+}
+
+body.home main > .section:nth-of-type(4) .columns > div {
+  display: grid;
+  grid-template-columns: 1fr minmax(280px, 2fr) auto;
+  gap: 0;
+  align-items: center;
+}
+
+body.home main > .section:nth-of-type(4) .columns > div > div {
+  background: #fff;
+}
+
+body.home main > .section:nth-of-type(4) .columns > div > div:first-child {
+  background: transparent;
+}
+
+body.home main > .section:nth-of-type(4) .columns > div > div:nth-child(2) {
+  border: 1px solid var(--home-border);
+  padding-inline: 16px;
+}
+
+body.home main > .section:nth-of-type(4) .columns > div > div:nth-child(2) a {
+  color: #777;
+  font-weight: 400;
+}
+
+body.home main > .section:nth-of-type(4) .columns > div > div:nth-child(3) a.button {
+  border-radius: 0;
+  padding-inline: 42px;
+}
+
+body.home main > .section:nth-of-type(5) h2 {
+  text-align: center;
+  font-size: var(--heading-font-size-l);
+}
+
+body.home main > .section:nth-of-type(5) .cards > ul,
+body.home main > .section:nth-of-type(10) .cards > ul {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+body.home main > .section:nth-of-type(5) .cards > ul > li,
+body.home main > .section:nth-of-type(10) .cards > ul > li,
+body.home main > .section:nth-of-type(11) .cards > ul > li {
+  border-color: var(--home-border);
+}
+
+body.home main > .section:nth-of-type(5) .cards p:first-of-type {
+  color: #118a3b;
+  font-weight: 700;
+}
+
+body.home main > .section:nth-of-type(6) .cards > ul {
+  grid-template-columns: 1.15fr 1.15fr 0.9fr;
+}
+
+body.home main > .section:nth-of-type(6) .cards > ul > li:nth-child(n + 4) {
+  grid-column: 3;
+  border-top: 1px solid var(--home-border);
+  padding-top: 12px;
+}
+
+body.home main > .section:nth-of-type(7) {
+  background-color: #0f0f0f;
+  color: #fff;
+}
+
+body.home main > .section:nth-of-type(7) a:any-link,
+body.home main > .section:nth-of-type(9) a:any-link {
+  color: #fff;
+}
+
+body.home main > .section:nth-of-type(7) .cards > ul {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+body.home main > .section:nth-of-type(7) .cards > ul > li {
+  border: 0;
+  background: #222;
+}
+
+body.home main > .section:nth-of-type(7) .cards-card-body {
+  min-height: 120px;
+}
+
+body.home main > .section:nth-of-type(9) {
+  background:
+    linear-gradient(90deg, rgb(0 0 0 / 88%), rgb(0 0 0 / 60%)),
+    url("/images/fabfb680f91975a1a739440d5faef7a2.png") center / cover;
+  color: #fff;
+}
+
+body.home main > .section:nth-of-type(9) h2 {
+  color: #fff;
+}
+
+body.home main > .section:nth-of-type(9) .columns > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+body.home main > .section:nth-of-type(9) .columns > div > div {
+  border: 1px solid rgb(255 255 255 / 35%);
+  padding: 10px 14px;
+  background-color: rgb(255 255 255 / 12%);
+}
+
+body.home main > .section:nth-of-type(9) .cards > ul {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+body.home main > .section:nth-of-type(9) .cards > ul > li {
+  border: 0;
+  background: rgb(255 255 255 / 10%);
+}
+
+body.home main > .section:nth-of-type(9) .cards h3 {
+  font-size: var(--heading-font-size-s);
+}
+
+body.home main > .section:nth-of-type(10) p:first-of-type {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+body.home main > .section:nth-of-type(10) p:first-of-type a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 38px;
+  min-height: 38px;
+  border: 1px solid var(--home-border);
+  color: var(--brand-red);
+  font-size: var(--body-font-size-s);
+}
+
+body.home main > .section:nth-of-type(11) {
+  min-height: 620px;
+  padding-bottom: 80px;
+  background:
+    linear-gradient(180deg, rgb(255 255 255 / 96%) 0 38%, rgb(255 255 255 / 18%) 38% 100%),
+    url("/images/f4b6cd59e06859cce79bdd81dbacf13d.png") center bottom / cover;
+}
+
+body.home main > .section:nth-of-type(11) .columns > div {
+  align-items: flex-start;
+}
+
+body.home main > .section:nth-of-type(11) .cards > ul {
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
+  max-width: 620px;
+  margin-left: auto;
+}
+
+body.home main > .section:nth-of-type(11) .cards > ul > li {
+  background-color: rgb(255 255 255 / 94%);
+}
+
+@media (width < 900px) {
+  body.home main > .section:nth-of-type(2) .cards > ul,
+  body.home main > .section:nth-of-type(3) .cards > ul,
+  body.home main > .section:nth-of-type(5) .cards > ul,
+  body.home main > .section:nth-of-type(6) .cards > ul,
+  body.home main > .section:nth-of-type(7) .cards > ul,
+  body.home main > .section:nth-of-type(9) .cards > ul,
+  body.home main > .section:nth-of-type(10) .cards > ul,
+  body.home main > .section:nth-of-type(11) .cards > ul {
+    grid-template-columns: 1fr;
+  }
+
+  body.home main > .section:nth-of-type(4) .columns > div,
+  body.home main > .section:nth-of-type(9) .columns > div {
+    grid-template-columns: 1fr;
+  }
+
+  body.home main > .section:nth-of-type(6) .cards > ul > li:nth-child(n + 4) {
+    grid-column: auto;
+  }
+}
+/* stylelint-enable no-descending-specificity */

@@ -1,6 +1,11 @@
 footer {
-  background-color: var(--light-color);
+  background-color: #151515;
+  color: #fff;
   font-size: var(--body-font-size-xs);
+}
+
+footer a:any-link {
+  color: #fff;
 }
 
 footer .footer > div {
@@ -10,7 +15,12 @@ footer .footer > div {
 }
 
 footer .footer p {
-  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin: 0 0 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgb(255 255 255 / 20%);
 }
 
 @media (width >= 900px) {
